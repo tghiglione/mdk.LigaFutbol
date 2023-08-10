@@ -1,0 +1,32 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"_Type": "Section.Type.Image",
+					"_Name": "SectionImage0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Image": "/LigaBasketballNba/Images/fondonba.jpg",
+					"Alignment": "Center",
+					"ContentMode": "ScaleAspectFit"
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "DetalleEquipo",
+	"Caption": "Detalle Equipo",
+	"PrefersLargeCaption": true
+}

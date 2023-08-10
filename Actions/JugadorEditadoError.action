@@ -1,0 +1,7 @@
+{
+	"_Type": "Action.Type.ToastMessage",
+	"ActionResult": {
+		"_Name": "JugadorEditadoError"
+	},
+	"Message": "Error al editar jugador"
+}

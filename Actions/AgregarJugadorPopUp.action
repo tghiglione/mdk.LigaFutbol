@@ -1,0 +1,11 @@
+{
+	"_Type": "Action.Type.Message",
+	"ActionResult": {
+		"_Name": "AgregarJugadorPopUp"
+	},
+	"Message": "Desea agregar el jugador?",
+	"Title": "Agregar Jugador",
+	"OKCaption": "Agregar",
+	"OnOK": "/LigaBasketballNba/Actions/CRUD/CrearJugador.action",
+	"CancelCaption": "Cancelar"
+}

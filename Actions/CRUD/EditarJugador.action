@@ -1,0 +1,24 @@
+{
+	"_Type": "Action.Type.ODataService.UpdateEntity",
+	"ActionResult": {
+		"_Name": "EditarJugador"
+	},
+	"OnFailure": "/LigaBasketballNba/Actions/JugadorEditadoError.action",
+	"OnSuccess": "/LigaBasketballNba/Actions/ExitoEditarJugador.action",
+	"Target": {
+		"Service": "/LigaBasketballNba/Services/NBA.service",
+		"EntitySet": "JugadoresSet",
+		"ReadLink": "{@odata.readLink}"
+	},
+	"Properties": {
+		"EQUIPOID": "{EQUIPOID}",
+		"NOMBRE": "#Page:EditarJugador/#Control:InputNombreEditarJugador/#Value",
+		"APELLIDO": "#Page:EditarJugador/#Control:InputApellidoEditarJugador/#Value",
+		"POSICION": "#Page:EditarJugador/#Control:InputPosicionEditarJugador/#Value",
+		"ALTURA": "#Page:EditarJugador/#Control:InputAlturaEditarJugador/#Value",
+		"NACIMIENTO": "#Page:EditarJugador/#Control:InputNacimientoEditarJugador/#Value",
+		"EDAD": "#Page:EditarJugador/#Control:InputEdadEditarJugador/#Value",
+		"NACIONALIDAD": "#Page:EditarJugador/#Control:InputNacionalidadEditarJugador/#Value",
+		"IMAGEN": "#Page:EditarJugador/#Control:InputImagenEditarJugador/#Value"
+	}
+}

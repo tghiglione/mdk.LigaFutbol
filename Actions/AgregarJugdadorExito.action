@@ -1,0 +1,7 @@
+{
+	"_Type": "Action.Type.ToastMessage",
+	"ActionResult": {
+		"_Name": "AgregarJugdadorExito"
+	},
+	"Message": "Jugador agregado exitosamente"
+}

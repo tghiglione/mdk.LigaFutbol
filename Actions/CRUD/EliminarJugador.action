@@ -1,0 +1,13 @@
+{
+	"_Type": "Action.Type.ODataService.DeleteEntity",
+	"ActionResult": {
+		"_Name": "EliminarJugador"
+	},
+	"OnFailure": "/LigaBasketballNba/Actions/EliminarJugadorError.action",
+	"OnSuccess": "/LigaBasketballNba/Actions/EliminarJugadorExito.action",
+	"Target": {
+		"Service": "/LigaBasketballNba/Services/NBA.service",
+		"EntitySet": "JugadoresSet",
+		"ReadLink": "{@odata.readLink}"
+	}
+}

@@ -1,0 +1,79 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"_Type": "Section.Type.ObjectTable",
+					"Target": {
+						"Service": "/LigaBasketballNba/Services/NBA.service",
+						"EntitySet": "EquiposSet",
+						"QueryOptions": "$orderby=EQUIPOID"
+					},
+					"_Name": "SectionObjectTable0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": false,
+						"HeaderSeparator": false,
+						"FooterSeparator": false,
+						"ControlSeparator": false
+					},
+					"ObjectCell": {
+						"Title": "{CIUDAD} {NOMBRE}",
+						"Subhead": "Estadio: {ESTADIO}",
+						"DisplayDescriptionInMobile": true,
+						"PreserveIconStackSpacing": false,
+						"AccessoryType": "detailDisclosureButton",
+						"AccessoryButtonIcon": "sap-icon://action",
+						"Tags": [
+							{
+								"Color": "/LigaBasketballNba/Rules/Formatters/FormatterConferencia.js",
+								"Text": "{CONFERENCIA}"
+							}
+						],
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": "{IMAGEN}",
+									"ImageText": ""
+								}
+							],
+							"ImageIsCircular": true,
+							"ImageHasBorder": false
+						},
+						"AvatarGrid": {
+							"Avatars": [],
+							"ImageIsCircular": true
+						},
+						"OnPress": "/LigaBasketballNba/Actions/NavToDetalle.action",
+						"Selected": false,
+						"ContextMenu": {
+							"Items": [],
+							"PerformFirstActionWithFullSwipe": true
+						}
+					},
+					"DataPaging": {
+						"ShowLoadingIndicator": false,
+						"LoadingIndicatorText": "",
+						"PageSize": 50
+					},
+					"HighlightSelectedItem": false,
+					"Selection": {
+						"ExitOnLastDeselect": true,
+						"LongPressToEnable": "None",
+						"Mode": "None"
+					}
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Equipos",
+	"Caption": "Equipos",
+	"PrefersLargeCaption": true
+}

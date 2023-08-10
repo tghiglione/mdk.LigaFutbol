@@ -1,0 +1,84 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": false,
+						"FooterSeparator": false,
+						"ControlSeparator": false
+					},
+					"_Type": "Section.Type.ObjectTable",
+					"Target": {
+						"Service": "/LigaBasketballNba/Services/NBA.service",
+						"EntitySet": "{@odata.readLink}/To_Jugadores"
+					},
+					"_Name": "SectionObjectTable0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"ObjectCell": {
+						"ContextMenu": {
+							"Items": [],
+							"PerformFirstActionWithFullSwipe": true
+						},
+						"Title": "{NOMBRE} {APELLIDO}",
+						"Subhead": "{POSICION}",
+						"DisplayDescriptionInMobile": true,
+						"PreserveIconStackSpacing": true,
+						"AccessoryType": "detailDisclosureButton",
+						"AccessoryButtonIcon": "sap-icon://action",
+						"ProgressIndicator": "inProgress",
+						"Tags": [],
+						"AvatarStack": {
+							"Avatars": [],
+							"ImageIsCircular": true,
+							"ImageHasBorder": false
+						},
+						"AvatarGrid": {
+							"Avatars": [],
+							"ImageIsCircular": true
+						},
+						"OnPress": "/LigaBasketballNba/Actions/NavToDetalleJugador.action",
+						"OnAccessoryButtonPress": "/LigaBasketballNba/Actions/CrudJugador.action",
+						"Selected": false
+					},
+					"DataPaging": {
+						"ShowLoadingIndicator": false,
+						"PageSize": 50
+					},
+					"HighlightSelectedItem": false,
+					"Selection": {
+						"ExitOnLastDeselect": true,
+						"LongPressToEnable": "None",
+						"Mode": "None"
+					}
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "DetalleJugador",
+	"Caption": "Jugadores",
+	"PrefersLargeCaption": true,
+	"ToolBar": {
+		"Items": [
+			{
+				"_Type": "Control.Type.ToolbarItem",
+				"_Name": "ToolbarItem0",
+				"Caption": "Agregar Jugador",
+				"Enabled": true,
+				"Visible": true,
+				"Clickable": true,
+				"Icon": "sap-icon://add",
+				"Style": "",
+				"OnPress": "/LigaBasketballNba/Actions/NavToCrearJugador.action"
+			}
+		]
+	}
+}

@@ -1,0 +1,10 @@
+{
+    "Service": "/LigaBasketballNba/Services/NBA.service",
+    "_Type": "Action.Type.ODataService.Initialize",
+    "ShowActivityIndicator": true,
+    "OnSuccess": "/LigaBasketballNba/Actions/Service/InitializeOnlineSuccessMessage.action",
+    "OnFailure": "/LigaBasketballNba/Actions/Service/InitializeOnlineFailureMessage.action",
+    "ActionResult": {
+        "_Name": "init"
+    }
+}

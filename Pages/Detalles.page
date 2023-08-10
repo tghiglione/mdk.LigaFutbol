@@ -1,0 +1,53 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"_Type": "Section.Type.ObjectHeader",
+					"_Name": "SectionObjectHeader0",
+					"ObjectHeader": {
+						"Subhead": "Conferencia: {CONFERENCIA}",
+						"Footnote": "Estadio: {ESTADIO}",
+						"DetailImage": "{IMAGEN}",
+						"DetailImageIsCircular": true,
+						"HeadlineText": "{CIUDAD} {NOMBRE}",
+						"StatusPosition": "Stacked",
+						"StatusImagePosition": "Leading",
+						"SubstatusImagePosition": "Leading",
+						"Target": {
+							"Service": "/LigaBasketballNba/Services/NBA.service",
+							"EntitySet": "{@odata.readLink}",
+							"ReadLink": ""
+						}
+					},
+					"Visible": true
+				}
+			]
+		},
+		{
+			"_Type": "Control.Type.Tabs",
+			"_Name": "Tabs0",
+			"Items": [
+				{
+					"_Type": "Control.Type.TabItem",
+					"Caption": "Detalle del equipo",
+					"PageToOpen": "/LigaBasketballNba/Pages/DetalleEquipo.page",
+					"_Name": "TabItem0"
+				},
+				{
+					"_Type": "Control.Type.TabItem",
+					"Caption": "Jugadores",
+					"PageToOpen": "/LigaBasketballNba/Pages/Jugadores.page",
+					"_Name": "TabItem1"
+				}
+			],
+			"Position": "Top",
+			"TabStripType": "Normal"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Detalles",
+	"Caption": "Detalles"
+}

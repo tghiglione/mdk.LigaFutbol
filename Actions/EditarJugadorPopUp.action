@@ -1,0 +1,11 @@
+{
+	"_Type": "Action.Type.Message",
+	"ActionResult": {
+		"_Name": "EditarJugadorPopUp"
+	},
+	"Message": "Desea editar jugador?",
+	"Title": "Editar Jugador",
+	"OKCaption": "Editar",
+	"OnOK": "/LigaBasketballNba/Actions/CRUD/EditarJugador.action",
+	"CancelCaption": "Cancelar"
+}

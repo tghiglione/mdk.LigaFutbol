@@ -1,0 +1,24 @@
+{
+	"_Type": "Action.Type.PopoverMenu",
+	"ActionResult": {
+		"_Name": "CrudJugador"
+	},
+	"PopoverItems": [
+		{
+			"Title": "Editar",
+			"Icon": "sap-icon://edit",
+			"Style": "",
+			"OnPress": "/LigaBasketballNba/Actions/NavToEditarJugador.action",
+			"Visible": true,
+			"Enabled": true
+		},
+		{
+			"Title": "Eliminar",
+			"Icon": "sap-icon://delete",
+			"Style": "",
+			"OnPress": "/LigaBasketballNba/Actions/EliminarJugadorPopUp.action",
+			"Visible": true,
+			"Enabled": true
+		}
+	]
+}

@@ -1,0 +1,35 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"_Type": "Section.Type.ObjectHeader",
+					"_Name": "SectionObjectHeader0",
+					"ObjectHeader": {
+						"Subhead": "{POSICION}",
+						"Footnote": "{EDAD} años",
+						"Description": "Altura: {ALTURA} cm",
+						"DetailImage": "{IMAGEN}",
+						"DetailImageIsCircular": false,
+						"BodyText": "Nacimiento: {NACIMIENTO}  Nacionalidad: {NACIONALIDAD}",
+						"HeadlineText": "{NOMBRE} {APELLIDO}",
+						"StatusPosition": "Stacked",
+						"StatusImagePosition": "Leading",
+						"SubstatusImagePosition": "Leading",
+						"Target": {
+							"Service": "/LigaBasketballNba/Services/NBA.service",
+							"EntitySet": "{@odata.readLink}"
+						}
+					},
+					"Visible": true
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "DetalleJugador",
+	"Caption": "Detalle Jugador",
+	"PrefersLargeCaption": true
+}

@@ -1,0 +1,23 @@
+{
+	"_Type": "Action.Type.ODataService.CreateEntity",
+	"ActionResult": {
+		"_Name": "CrearJugador"
+	},
+	"OnFailure": "/LigaBasketballNba/Actions/AgregarJugadorError.action",
+	"OnSuccess": "/LigaBasketballNba/Actions/AgregarJugdadorExito.action",
+	"Target": {
+		"Service": "/LigaBasketballNba/Services/NBA.service",
+		"EntitySet": "JugadoresSet"
+	},
+	"Properties": {
+		"EQUIPOID": "{EQUIPOID}",
+		"NOMBRE": "#Page:AgregarJugador/#Control:InputNombreAgregarJugador/#Value",
+		"APELLIDO": "#Page:AgregarJugador/#Control:InputApellidoAgregarJugador/#Value",
+		"POSICION": "#Page:AgregarJugador/#Control:InputPosicionAgregarJugador/#Value",
+		"ALTURA": "#Page:AgregarJugador/#Control:InputAlturaAgregarJugador/#Value",
+		"NACIMIENTO": "#Page:AgregarJugador/#Control:InputNacimientoAgregarJugador/#Value",
+		"EDAD": "#Page:AgregarJugador/#Control:InputEdadAgregarJugador/#Value",
+		"NACIONALIDAD": "#Page:AgregarJugador/#Control:InputNacionalidadAgregarJugador/#Value",
+		"IMAGEN": "#Page:AgregarJugador/#Control:InputImagenAgregarJugador/#Value"
+	}
+}

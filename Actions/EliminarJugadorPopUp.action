@@ -1,0 +1,11 @@
+{
+	"_Type": "Action.Type.Message",
+	"ActionResult": {
+		"_Name": "EliminarJugadorPopUp"
+	},
+	"Message": "Desea eliminar el jugador?",
+	"Title": "Eliminar jugador",
+	"OKCaption": "Eliminar",
+	"OnOK": "/LigaBasketballNba/Actions/CRUD/EliminarJugador.action",
+	"CancelCaption": "Cancelar"
+}
